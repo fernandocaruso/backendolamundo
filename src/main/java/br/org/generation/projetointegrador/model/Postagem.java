@@ -19,11 +19,6 @@ public class Postagem {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	private long id_usuario;
-	
-	@NotNull
-	private long tipoPostagem;
-	
 	@NotNull
 	private String titulo;
 	
@@ -53,22 +48,6 @@ public class Postagem {
 
 	public void setId(long id) {
 		this.id = id;
-	}
-
-	public long getId_usuario() {
-		return id_usuario;
-	}
-
-	public void setId_usuario(long id_usuario) {
-		this.id_usuario = id_usuario;
-	}
-
-	public long getTipoPostagem() {
-		return tipoPostagem;
-	}
-
-	public void setTipoPostagem(long tipoPostagem) {
-		this.tipoPostagem = tipoPostagem;
 	}
 
 	public String getTitulo() {
